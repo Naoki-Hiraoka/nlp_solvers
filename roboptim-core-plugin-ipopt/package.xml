@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>roboptim-core-plugin-ipopt</name>
+  <version>0.0.0</version>
+  <description>The roboptim-core-plugin-ipopt package</description>
+
+  <maintainer email="hiraoka@jsk.imi.i.u-tokyo.ac.jp">Naoki-Hiraoka</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>cmake</buildtool_depend>
+
+  <buildtool_depend>cmake</buildtool_depend>
+  <build_depend>git</build_depend>
+
+  <depend>coinor-libipopt-dev</depend>
+  <depend>gfortran</depend> <!-- Without gfortran, "/usr/bin/ld: -lgfortran is not found" error occured-->
+  <depend>roboptim-core</depend>
+
+  <export>
+    <build_type>cmake</build_type>
+  </export>
+</package>
